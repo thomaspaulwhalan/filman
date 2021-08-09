@@ -30,4 +30,13 @@
 #endif	// NFAIL_IF_R
 #endif	// NFAIL_IF_E
 
+#ifndef		BREAK_IF
+#define		BREAK_IF(EXP)					if (EXP){break;}
+
+#ifndef		BREAK_IF_M
+#define		BREAK_IF_M(EXP, STREAM, MSG)			if (EXP){fprintf(STREAM, MSG);break;}
+
+#endif // BREAK_IF_R
+#endif // BREAK_IF
+
 #endif	// NERROR_H
